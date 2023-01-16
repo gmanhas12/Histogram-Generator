@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histogram</title>
+    <link rel="stylesheet" href="histogram.css" />
+    <script src="calculate.js" type="text/javascript" defer></script>
+  </head>
+  <body onload="init()">
+    <header>
+      Histogram Generator<br><br>
+          <input id="fileInput" type="file" name="file" />
+      <br><br>
+    </header>
+      <section class="bound">
+        <p class="lower">Lower Bound</p>
+        <form action="calculate.js" method="get">
+          <label for="max">Max</label>
+          <br>
+          <input type="text" id="max" name="max" value="100.00"/>
+          <br>
+          <label for="aplus">A+</label>
+          <br>
+          <input type="text" id="aplus" name="aplus" value="95.00"/>
+          <br>
+          <label for="a">A</label>
+          <br>
+          <input type="text" id="a" name="a" value="90.00"/>
+          <br>
+          <label for="aminus">A-</label>
+          <br>
+          <input type="text" id="aminus" name="aminus" value="85.00"/>
+          <br>
+          <label for="bminus">B+</label>
+          <br>
+          <input type="text" id="bplus" name="bplus" value="80.00"/>
+          <br>
+          <label for="b">B</label>
+          <br>
+          <input type="text" id="b" name="b" value="75.00"/>
+          <br>
+          <label for="bminus">B-</label>
+          <br>
+          <input type="text" id="bminus" name="bminus" value="70.00"/>
+          <br>
+          <label for="cplus">C+</label>
+          <br>
+          <input type="text" id="cplus" name="cplus" value="65.00"/>
+          <br>
+          <label for="c">C</label>
+          <br>
+          <input type="text" id="c" name="c" value="60.00"/>
+          <br>
+          <label for="cminus">C-</label>
+          <br>
+          <input type="text" id="cminus" name="cminus" value="55.00"/>
+          <br>
+          <label for="d">D</label>
+          <br>
+          <input type="text" id="d" name="d" value="50.00"/>
+          <br>
+          <label for="f">F</label>
+          <br>
+          <input type="text" id="f" name="f" value="0.00"/>
+          <br>
+        </form>
+      </section>
+      <section class="histogram">
+        <p class="hist">Histogram</p>
+        <form action="calculate.js" method="get" id="test">
+          <label for="A+">A+</label>
+          <br>
+          <input type="text" id="A+" name="A+" value=""/>
+          <br>
+          <label for="A">A</label>
+          <br>
+          <input type="text"id="A" name="A" value=""/>
+          <br>
+          <label for="A-">A-</label>
+          <br>
+          <input type="text"id="A-" name="A-" value=""/>
+          <br>
+          <label for="B+">B+</label>
+          <br>
+          <input type="text" id="B+" name="B+" value=""/>
+          <br>
+          <label for="B">B</label>
+          <br>
+          <input type="text" id="B" name="B" value=""/>
+          <br>
+          <label for="B-">B-</label>
+          <br>
+          <input type="text" id="B-"name="B-"value=""/>
+          <br>
+          <label for="C+">C+</label>
+          <br>
+          <input type="text" id="C+" name="C+"value=""/>
+          <br>
+          <label for="C">C</label>
+          <br>
+          <input type="text" id="C" name="C" value=""/>
+          <br>
+          <label for="C-">C-</label>
+          <br>
+          <input type="text" id="C-"name="C-"value=""/>
+          <br>
+          <label for="D">D</label>
+          <br>
+          <input type="text"id="D" name="D" value=""/>
+          <br>
+          <label for="F">F</label>
+          <br>
+          <input type="text" id="F" name="F" value=""/>
+          <br>
+        </form>
+      </section>
+      <section class="stats">
+        <p class="stat">Stats</p>
+        <form action="calculate.js" method="get">
+          <label for="highest">Highest</label>
+          <br>
+          <input type="text" id="highest" name="highest" value=""/>
+          <br>
+          <label for="lowest">Lowest</label>
+          <br>
+          <input type="text" id="lowest" name="lowest" value=""/>
+          <br>
+          <label for="mean">Mean</label>
+          <br>
+          <input type="text" id="mean" name="mean" value=""/>
+          <br>
+          <label for="median">Median</label>
+          <br>
+          <input type="text" id="median" name="median" value=""/>
+        </form>
+      </section>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    background-color: red;
+    overflow: hidden
+
+}
+
+
+.bound{
+    position: relative;
+    right: 600px;
+    color: black;
+    text-align: center;
+    bottom: 20px;
+}
+
+
+
+.histogram{
+    position: relative;
+    left: 10px;
+    bottom: 765px;
+    color: black;
+    text-align: center;
+
+}
+
+input[type=text] {
+    width: 150px;
+    padding: 8px 13px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 0px;
+  }
+
+
+
+
+.stats{
+    position: relative;
+    left: 595px;
+    bottom: 1460px;
+    color: black;
+    text-align: center;
+}
+
+
+
+.hist{
+    font-size: 20px;
+}
+
+.lower{
+    font-size: 20px;
+}
+
+.stat{
+    font-size: 20px;
+}
